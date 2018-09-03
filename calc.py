@@ -39,13 +39,13 @@ Please type in the math operation you would like to complete:
 
 # Power
 	elif operation == '**':
-		powerTotal = 0
+		powerTotal = 1
 		count = number_2
 		while (count >= 0):
-    			print(count)
+	    		print(count)
 			newPower = number_1*number_1
 			count = count - 1
-			powerTotal = powerTotal + newPower
+			powerTotal = powerTotal * newPower
 		print('{} ^ {} = '.format(number_1, number_2))
 		print(powerTotal)
 
@@ -55,7 +55,7 @@ Please type in the math operation you would like to complete:
 		print(number_1 % number_2)
 
 	else:
-	    	print('You have not typed a valid operator, please run the program again.')
+	   	print('You have not typed a valid operator, please run the program again.')
 	again()
 
 def again():
